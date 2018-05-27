@@ -9,15 +9,15 @@ class Test extends Component {
       blur: 1,
       compose: "source-over",
       bubbleFunc: () => `hsla(${Math.random() * 50}, 100%, 50%, .3)`,
-      // canvas: document.querySelector("#background")
+      canvas: document.querySelector("#background")
   	});
   }
 
   render() {
     return (
-      <div id="background" className="App">
+      <canvas id="background" className="App">
        <p>test</p>
-      </div>
+      </canvas>
     );
   }
 }
